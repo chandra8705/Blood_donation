@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donaton.com</title>
+    <style>
+        .container {
+            color:black;
+            background-color: white;
+            border: 0px solid ;
+            display:grid;
+            font-family: Arial, Helvetica, sans-serif;
+            grid: gap 2px;
+            grid-template-areas:
+                'abc abc abc abc'
+                'form form img img'
+                'process process process process'
+                'aside aside aside aside';
+        }
+        body{
+            background-color:white;
+        }
+        #header{
+            color: rgba(0, 0, 0, 0.877);
+            background-color:white;
+            margin-left: 15px;
+        }
+        .heading {
+            display: inline-block;
+            font-size: 35px;
+            color: #950303;
+            background-color:white;
+            margin: 1px;
+        }
+        .right{
+            color: rgba(0, 0, 0, 0.877);
+            text-align: right;
+            padding: 15px 32px;
+            font-size: 25px;
+        }
+        #header h3{
+            margin: 0px;
+            padding: 0px;
+        }
+        #navbar{
+            background-color: #950303;
+            margin-left: 15px;
+        }
+
+        .box {
+            border: 5px solid rgba(255, 255, 255, 1);
+            font-size: 15px;
+            border-radius: 1px;
+        }
+
+        #navbar li {
+            list-style: none;
+            display: inline-block;
+            padding: 18px 50px;
+            font-size: 18px;
+            size: 90%;
+        }
+
+        #navbar li a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-weight: bolder;
+        }
+
+        #navbar li a:hover {
+            cursor: pointer;
+            color: #950303;
+            background-color: white;
+        }
+
+        #navbar li a:active {
+            color: rgb(19, 9, 105);
+        }
+
+        .box img {
+            width: 700px;
+            height: 250px;
+            padding: 0px ;
+        }
+
+        #abc {
+            grid-area: abc;
+        }
+
+        #form {
+            padding: 6px 8px;
+            padding-left: 3%;
+            margin: 15px;
+            grid-area: form;
+            text-align: center;
+            font-weight: bold;
+            font-family: cursive;
+            background-image: url("formback1.jpg");
+            border-color: none;
+        }
+
+        #img {
+            padding: 6px 8px;
+            margin:15px;
+            grid-area: img;
+            text-align: center;
+            background-color: white;
+        }
+
+        #process {
+            padding: 6px 8px;
+            margin: 15px;
+            grid-area: process;
+        }
+
+        #aside {
+            padding: 6px 8px;
+            margin: 15px;
+            grid-area: aside;
+        }
+
+        #feedback {
+            padding: 2px 0px;
+            margin: 15px;
+            text-align: center;
+            font-size: 35px;
+            width: 290px;
+        }
+
+        #feedback a {
+            text-decoration: none;
+            font-weight: bolder;
+            color: #950303;
+        }
+
+        #feedback a:hover {
+            color: #950303;
+            text-decoration: underline;
+            background-color: white;
+        }
+
+        .login {
+            font-size: large;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login:hover {
+            color: blue;
+            background-color: lightblue;
+            text-decoration: underline;
+        }
+
+        .bdr {
+            font-size: large;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .bdr:hover {
+            color: blue;
+            background-color: lightblue;
+            text-decoration: underline;
+        }
+        #process  h2 , #aside h2{
+            text-align: center;
+            padding: 3px;
+            background-color: rgba(211, 211, 211, 0.822);
+        }
+        #process p{
+            margin-left: 15px;
+            text-decoration: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="upper" id="abc">
+            <header id="header" class="box">
+                <h1 class="heading">BLOOD BANK</h1>
+                <h3>A Social Intiative</h3>
+                <div class="right">
+                    Donar login&nbsp;&nbsp;<input type="text">&nbsp;&nbsp;&nbsp;
+                    Password&nbsp;&nbsp;<input type="password">
+                    <button class="login">Login</button>
+                </div>
+            </header>
+            <nav class="box" id="navbar">
+                <ul>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="why_donate_blood.html">Why Donate Blood</a></li>
+                    <li><a href="who_can_give_blood.html">Who Can Give Blood</a></li>
+                    <li><a href="refer_a_friend.html">Refer A Friend</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="box" id="form">
+            <fieldset>
+            <legend><h2>FIND A DONOR</h2></legend>
+            <div>
+                State
+                <select name="state" id="state" class="form-control">
+                    <option value="nothing">-------Select------</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman Nicobar</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar</option>
+                    <option value="Daman and Diu">Daman&Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu&Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                City <select name="City" id="city">
+                    <option value="">-----Select------</option>
+                    <option value="">Ahmedabad</option>
+                    <option value="">Valsad</option>
+                    <option value="">Vadodra</option>
+                    <option value="">Mehsana</option>
+                    <option value="">Bharuch</option>
+                    <option value="">Bhavnagar</option>
+                    <option value="">Jamnagar</option>
+                    <option value="">Gandhinagar</option>
+                    <option value="">Meghaninagar</option>
+                    <option value="">Anand</option>
+                    <option value="">Kalupur</option>
+                    <option value="">ludhiana</option>
+                    <option value="">jalandhar</option>
+                    <option value="">Amritsar</option>
+                    <option value="">patiala</option>
+                    <option value="">patna</option>
+                    <option value="">ambala</option>
+                    <option value="">tripura</option>
+                    <option value="">hisar</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                Area <select name="Area" id="area">
+                    <option value="">-----Select------</option>
+                    <option value="">ChandKheda</option>
+                    <option value="">Tragad Road</option>
+                    <option value="">Ramnagar</option>
+                    <option value="">Motera</option>
+                    <option value="">JantaNagar</option>
+                    <option value="">Tapovan</option>
+                    <option value="">Godrej City</option>
+                    <option value="">D-Cabin</option>
+                    <option value="">New C.G. Road</option>
+                    <option value="">Khodiar Nagar</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                Group <select name="Group" id="group">
+                    <option value="">-------Select------</option>
+                    <option value="">A positive (A+)</option>
+                    <option value="">A negative (A-)</option>
+                    <option value="">B positive (B+)</option>
+                    <option value="">B negative (B-)</option>
+                    <option value="">AB positive (AB+)</option>
+                    <option value="">AB negative (AB-)</option>
+                    <option value="">O positive (O+)</option>
+                    <option value="">O negative (O-)</option>
+                </select>
+            </div>
+            </fieldset>
+            <br>
+            <div>
+                <button class="bdr">Search</button>
+            </div>
+
+        </div>
+        <div class="box" id="img">
+            <img src="bloodmain.png" alt="">
+        </div>
+        <div class="box" id="process">
+            <h2>Donation Process</h2>
+            <h3>
+            <p>Donor fills up the registration form and gives his consent for donation.</p>
+               <p>1.Medical Check up (5 Mins) Donors Medical History & life style is asked, check up of temperature, bloodpressure, pulse and haemoglobin.</p>
+               <p>2.Donation (8 Mins) Phlebotomist draws unit (350ml/450ml) of blood. ...
+               <p>3.Refreshment (10 Mins)</p></h3>
+        </div>
+        <div class="box" id="aside">
+            <h2>Where Would You Like To Donate</h2>
+            <input type="text" size="150">
+            <button class="bdr">Search</button>
+        </div>
+        <div class="box" id="feedback">
+            <a href="">Give Feedback +</a>
+        </div><br>
+    </div>
+</body>
+
+</html>
+

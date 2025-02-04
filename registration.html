@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION</title>
+    <style>
+        .container {
+            color: black;
+            background-color: white;
+            display: inline-block;
+            width: 100%;
+            margin-right: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .upper {
+            color: #740909;
+        }
+        #header{
+            color: rgba(0, 0, 0, 0.877);
+            background-color:white;
+            margin-left: 15px;
+        }
+        .heading {
+            display: inline-block;
+            font-size: 35px;
+            color: #950303;
+            background-color:white;
+            margin: 1px;
+            padding-bottom: 20px;
+        }
+        #navbar {
+            background-color: #950303;
+            margin-left: 15px;
+        }
+        #navbar li {
+            list-style: none;
+            display: inline-block;
+            padding: 18px 50px;
+            font-size: 18px;
+            size: 90%;
+        }
+
+        #navbar li a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-weight: bolder;
+        }
+
+        #navbar li a:hover {
+            cursor: pointer;
+            color: #950303;
+            background-color: white;
+        }
+
+        #navbar li a:active {
+            color: rgb(19, 9, 105);
+        }
+
+        .content h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .content ul {
+            width: 55%;
+        }
+
+        .img {
+            display: inline;
+            width: 40%;
+            height: 500px;
+            float: right;
+            margin-right: 10px;
+        }
+        #registration{
+            text-align: center;
+            font-style: italic;
+            font-family: cursive;
+            font-weight: bold;
+        }
+        button {
+            padding: 6px 22px;
+            margin: 5px;
+            font-size: 15px;
+            display:inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="upper" id="abc">
+            <header class="box" id="header">
+                <h1 class="heading">BLOOD BANK</h1>
+            </header>
+        </div>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="blood-donation.html">Home Page</a></li>
+                <li><a href="why_donate_blood.html">Why Donate blood</a></li>
+                <li><a href="who_can_give_blood.html">Who Can Give Blood</a></li>
+                <li><a href="refer_a_friend.html">Refer A Friend</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="box" id="registration">
+            <h1>Registration Form</h1>
+            <hr>
+            <br>
+            <div id="name">
+                Name : <input type="text" placeholder="Enter Your Name">
+            </div>
+            <br>
+            <div id="address">
+                Address : <input type="text" placeholder="Enter Your Current Address">
+            </div>
+            <br>
+            <div id="email">
+                Email : <input type="text" placeholder="Enter Your Email Address">
+            </div>
+            <br>
+            <div id="contact">
+                Contact : <input type="text" placeholder="Enter Your Contact Number">
+            </div>
+            <br>
+            <div id="age">
+                Age : <input type="number" placeholder="Enter Your Age">
+            </div>
+            <br>
+            <div id="date">
+                Birth-Date : <input type="date" name="birth-date" placeholder="Date">
+            </div>
+            <br>
+            <div id="gender">
+                Gender : Male <input type="radio" name="gender" class="Gender">   
+                         Female <input type="radio" name="gender" class="Gender">
+            </div>
+            <br>
+            <div id="group">
+            Blood Group : <select name="Group" id="group">
+                <option value="">Select</option>
+                <option value="">A positive (A+)</option>
+                <option value="">A negative (A-)</option>
+                <option value="">B positive (B+)</option>
+                <option value="">B negative (B-)</option>
+                <option value="">AB positive (AB+)</option>
+                <option value="">AB negative (AB-)</option>
+                <option value="">O positive (O+)</option>
+                <option value="">O negative (O-)</option>
+            </select>
+            </div>
+            <br>
+            <button class="submit">submit</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
